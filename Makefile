@@ -4,7 +4,7 @@ LIBGLAD = glad.c
 INC = ./include
 LIB = ./lib
 LIBSOIL = -lSOIL
-USE_GLEW = 1
+USE_GLEW = 0
 
 
 ifeq ($(USE_GLEW),1)
