@@ -87,17 +87,17 @@ GLFWwindow *InitGL()
     glfwSetScrollCallback(window, scroll_callback);
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     cursorDisable = true;
-    #ifdef USE_GLEW
+#ifdef USE_GLEW
     glewExperimental = GL_TRUE;
     glewInit();
-    #endif
-    #ifndef USE_GLEW
+#endif
+#ifndef USE_GLEW
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
         exit(-1);
     }
-    #endif
+#endif
     int width, height;
     glfwGetFramebufferSize(window, &width, &height);
     glViewport(0, 0, width, height);
