@@ -1,4 +1,4 @@
-LIBGL = -lGLEW -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
+LIBGL = -lGLEW -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl -lXxf86vm -lXcursor -lXinerama
 INC = ./include
 LIB = ./lib
 LIBSOIL = -lSOIL
