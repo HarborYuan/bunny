@@ -4,6 +4,7 @@ LIBGLAD = glad.c
 INC = ./include
 LIB = ./lib
 LIBSOIL = -lSOIL
+HEADERS = Shader.hpp
 USE_GLEW = 0
 
 
@@ -14,8 +15,8 @@ LIBGL += $(LIBGLAD)
 endif
 
 
-all : rabbit.elf
+all : bunny.elf
 
 
-%.elf : %.cpp
+%.elf : %.cpp $(HEADERS)
 	g++ $< $(LIBGL) $(LIBSOIL) -I$(INC) -L$(LIB) -o $@
