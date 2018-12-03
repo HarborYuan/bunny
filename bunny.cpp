@@ -285,12 +285,18 @@ int main()
         // Set material properties
         // Gold
         // 0.24725 0.1995 0.0745 0.75164 0.60648 0.22648 0.628281 0.555802 0.366065 0.4
-        // white plastic
-        // 0.0 0.0 0.0 0.55 0.55 0.55 0.7 07 0.7 0.25
         glUniform3f(glGetUniformLocation(ourShader.Program, "material.ambient"), 0.2475f, 0.1995f, 0.0745f);
         glUniform3f(glGetUniformLocation(ourShader.Program, "material.diffuse"), 0.75146f, 0.60648f, 0.22648f);
         glUniform3f(glGetUniformLocation(ourShader.Program, "material.specular"), 0.628281f, 0.555802f, 0.366065f);
         glUniform1f(glGetUniformLocation(ourShader.Program, "material.shininess"), 0.4f * 128);
+        /*
+        // white plastic
+        // 0.0 0.0 0.0 0.55 0.55 0.55 0.7 0.7 0.7 0.25
+        glUniform3f(glGetUniformLocation(ourShader.Program, "material.ambient"), 0.0f, 0.0f, 0.0f);
+        glUniform3f(glGetUniformLocation(ourShader.Program, "material.diffuse"), 0.55f, 0.55f, 0.55f);
+        glUniform3f(glGetUniformLocation(ourShader.Program, "material.specular"), 0.7f, 0.7f, 0.7f);
+        glUniform1f(glGetUniformLocation(ourShader.Program, "material.shininess"), 0.25f * 128);
+        */
         //Camera
         glm::mat4 view(1.f);
         glm::mat4 projection(1.f);
