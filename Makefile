@@ -17,6 +17,9 @@ endif
 
 all : bunny.elf
 
+clean:
+	rm -rf *.elf
+
 
 %.elf : %.cpp $(HEADERS)
 	g++ $< $(LIBGL) $(LIBSOIL) -I$(INC) -L$(LIB) -o $@
