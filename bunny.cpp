@@ -250,9 +250,9 @@ int main()
     Shader selectShader("bunnyP.vs", "bunnyP.frag");
     GLuint VAO, LVAO, VBO, EBO;
     getVAO(VAO, LVAO, VBO, EBO);
-#ifdef GL_LINE_TRUE
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-#endif
+
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
     while (!glfwWindowShouldClose(window))
     {
         GLfloat currentFrame = glfwGetTime();
