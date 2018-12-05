@@ -1,6 +1,7 @@
 # bunny
 [![Language](https://img.shields.io/badge/language-C++-blue.svg)](https://en.wikipedia.org/wiki/C++)
 [![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/HarborYuan/bunny)
+![bunny](bunny.png)
 ## Installation
 ### glfw & glew(optional)
 [![Version](https://img.shields.io/badge/glfw-3.2.1-orange.svg)](https://www.glfw.org/)
